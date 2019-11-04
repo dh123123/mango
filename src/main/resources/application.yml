@@ -1,0 +1,12 @@
+
+server:
+  port: 8001
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mango_platfrom?serverTimezone=UTC
+    username: root
+    password: root

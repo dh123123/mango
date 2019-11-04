@@ -1,0 +1,13 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.louis.mango.dao.ISysUserDAO">
+
+    <select id="get" resultType="com.louis.mango.po.SysUserPO" parameterType="map">
+      select *
+      from sys_user
+       <where>
+        <if test="id != null and id !=''">
+            id=#{id}
+        </if>
+       </where>
+    </select>
+</mapper>
