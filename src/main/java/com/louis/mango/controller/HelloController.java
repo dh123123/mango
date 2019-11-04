@@ -13,4 +13,10 @@ public class HelloController {
 
         return "hello word!";
     }
+
+    @RequestMapping(value = "/word")
+    public String get(){
+
+        return "word!";
+    }
 }
